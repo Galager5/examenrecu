@@ -1,0 +1,11 @@
+D:\sofware 2\examen\bin\Debug\examen.exe.config
+D:\sofware 2\examen\bin\Debug\examen.exe
+D:\sofware 2\examen\bin\Debug\examen.pdb
+D:\sofware 2\examen\obj\Debug\examen.csproj.AssemblyReference.cache
+D:\sofware 2\examen\obj\Debug\examen.csproj.SuggestedBindingRedirects.cache
+D:\sofware 2\examen\obj\Debug\examen.Form1.resources
+D:\sofware 2\examen\obj\Debug\examen.Properties.Resources.resources
+D:\sofware 2\examen\obj\Debug\examen.csproj.GenerateResource.cache
+D:\sofware 2\examen\obj\Debug\examen.csproj.CoreCompileInputs.cache
+D:\sofware 2\examen\obj\Debug\examen.exe
+D:\sofware 2\examen\obj\Debug\examen.pdb
