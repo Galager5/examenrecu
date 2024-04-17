@@ -12,6 +12,8 @@ namespace examen
 {
     public partial class Form1 : Form
     {
+        private List<Venta> ventas;
+
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +23,7 @@ namespace examen
           
             ventas = new List<Venta>();
 
-            // Crear objetos de la clase Cliente, Ruta y Venta
+            
             Cliente cliente1 = new Cliente { TipoCliente = "Promoción de colegios", Edad = 18 };
             Ruta ruta1 = new Ruta { NombreRuta = "Sacsayhuaman, Puka Pukara, Tambomachay", Precio = 100 };
             Venta venta1 = new Venta { Cliente = cliente1, Ruta = ruta1, Cantidad = 5, Descuento = 0.08m, ImportePago = 450 };
@@ -30,11 +32,15 @@ namespace examen
             Ruta ruta2 = new Ruta { NombreRuta = "Tipon, Lucre, Piquillaqta", Precio = 120 };
             Venta venta2 = new Venta { Cliente = cliente2, Ruta = ruta2, Cantidad = 3, Descuento = 0.13m, ImportePago = 312.60m };
 
-            // Agregar las ventas a la lista
+            
+       
+
+         
+
             ventas.Add(venta1);
             ventas.Add(venta2);
 
-            // Asignar la lista como origen de datos del DataGridView
+            
             dataGridView1.DataSource = ventas;
         }
         private void label1_Click(object sender, EventArgs e)
@@ -66,7 +72,6 @@ namespace examen
                     precio = 150;
                     break;
                 default:
-                    // Manejar el caso en el que no se selecciona una ruta válida
                     break;
             }
             MessageBox.Show($"El precio de la ruta seleccionada es: {precio.ToString("C")}");
@@ -77,7 +82,6 @@ namespace examen
 
             string tipoDescuento = cbDescuento.SelectedItem.ToString();
 
-            // Verifica el tipo de descuento seleccionado y asigna el valor correspondiente
             switch (tipoDescuento)
             {
                 case "0%":
@@ -93,7 +97,6 @@ namespace examen
                     descuento = 0.15;
                     break;
                 default:
-                    // Manejar el caso en el que no se selecciona un tipo de descuento válido
                     break;
             }
 
@@ -107,10 +110,6 @@ namespace examen
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -118,6 +117,16 @@ namespace examen
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
